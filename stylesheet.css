@@ -19,6 +19,8 @@ header
     padding: 16px;
     font-size: 16px;
     border: none;
+    cursor: pointer;
+    transition: 1s;
 }
 .dropdown 
 {
@@ -41,7 +43,7 @@ header
   }
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: lightcoral;}
 header > img
 {
     margin: 10px;
@@ -55,6 +57,14 @@ body
 body > h1
 {
     font-family: Fantasy;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+body>h1:hover
+{
+    width: 300px;
 } 
 .CapTabel
 {
@@ -79,8 +89,12 @@ table td
 {
     font-size: 12pt;
     font-style: italic;
-    border-bottom: 2px solid #FF4136;
+    border-bottom: 2px  #FF4136;
     padding: 12px 15px;
+}
+table ::first-line
+{
+    font-family: Fantasy;
 }
 #introduction > img
 {
@@ -105,7 +119,7 @@ table td
    font-weight: lighter;
    text-align: justify;
 }
-article> h1
+article > h1
 {
     text-align: justify;
     border-style: groove;
@@ -115,22 +129,21 @@ article> h1
 }
 article > p
 {
-    font-size: 18px;
+   font-size: 18px;
    font-weight: lighter;
    text-align: justify;
 }
 .maimute
 {
+    
     display:flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-
 }
 .maimute > p
 {
-
     font-size: 16px;
     font-family: Fantasy;
     font-weight: lighter;
@@ -139,3 +152,74 @@ article > p
     border-color: rgb(176,196,222);
     padding: 10px;
 }
+.animatie
+{
+    position: relative;
+    animation: mymove 5s infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  }
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+.actions 
+{
+    display: flex;
+}
+  
+.actions button:not(:last-child)
+{
+    margin-right: 4px;
+}
+  
+.actions .spacer 
+{
+    flex: 1;
+}
+  
+.news-article 
+{
+    border: 2px solid;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+}
+  
+.news-article img 
+{
+    height: 100%;
+    max-width: 7rem;
+}
+  
+.news-article .content
+{
+    flex: 1;
+    margin-left: 1rem;
+}
+  
+.news-article .content h1 
+{
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+  
+.news-article .content p 
+{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+input {
+    margin-bottom: 8px;
+  }
+
+  input:not([type="radio"]):not([type="checkbox"]) {
+    display: block;
+  }
+  
+  

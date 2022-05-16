@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gibraltar</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="myScript.js" defer ></script>
 </head>
 <body>
 <header>Ghid   de   vizitare
@@ -62,7 +63,7 @@
     </table>
     </section>
     <article>
-        <h1>Macacii misterioși din Gibraltar</h1>
+        <h1 id="p1">Macacii misterioși din Gibraltar</h1>
         <p>Macacii din Gibraltar Barbary sunt considerați de mulți ca fiind cea mai importantă atracție turistică din Gibraltar. Cea mai populară trupă este cea de la Poarta Reginei de la Ape's Den, unde oamenii se pot apropia mai ales de maimuțe. Se vor apropia adesea și uneori se vor urca pe oameni, deoarece sunt obișnuiți cu interacțiunea umană. Cu toate acestea, sunt încă animale sălbatice și vor mușca dacă sunt speriați sau enervați.</p>
         <p>O credință populară susține că atâta timp cât există macaci din Gibraltar Barbary pe Gibraltar, teritoriul va rămâne sub dominație britanică.În 1942 (în timpul celui de-al Doilea Război Mondial), după ce populația a scăzut la doar șapte maimuțe, prim-ministrul Marii Britanii Winston Churchill a ordonat ca numărul lor să fie completat imediat din fragmentele de pădure din Maroc și Algeria din cauza acestei credințe tradiționale. Într-o altă poveste, macacii din Gibraltar Barbary au intrat în Stâncă printr-un pasaj subteran între Peștera Sf. Mihail de Jos și Maroc.</p>
     </article>
@@ -71,6 +72,50 @@
     <p>Macaci cu un ambalaj de baton de ciocolată, furat-o din geanta unui turist în iulie 2016.</p>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Gibraltar_Barbary_Macaques_feeding.jpg/1280px-Gibraltar_Barbary_Macaques_feeding.jpg" width="200"/>   
     <p>Macacii primesc o aprovizionare zilnică cu fructe și legume proaspete, inclusiv portocale, mere, cartofi, ceapă, morcovi și varză pentru a-și completa resursele alimentare naturale.</p>
-    </div>  
+    </div>
+    <img class="animatie" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ba19533a-5bb3-4b20-94c1-5f53ec41a02f/d4k5vgy-6b81595a-c459-402c-bab6-34da49a28eee.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JhMTk1MzNhLTViYjMtNGIyMC05NGMxLTVmNTNlYzQxYTAyZlwvZDRrNXZneS02YjgxNTk1YS1jNDU5LTQwMmMtYmFiNi0zNGRhNDlhMjhlZWUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.SFnoWboBUeY50wxmLhRSZ0gP1ETIimIKvFV35eWOSzI" width="300"/> 
+    <div id="newsContainer">
+    </div>
+    <p class="actions">
+      <button id="addNews">Adauga informatii</button>
+      <button id="removeNews">Șterge informatii</button>
+      <span class="spacer"></span>
+      <button id="smallerFont">-</button>
+      <button id="biggerFont">+</button>
+    </p>
+    <h2>Formular de opinie</h2>
+    <form>
+        <input type="text" value="Descrie Gibraltar intr-un cuvant" name="text"/>
+        <input type="email" placeholder="Email..." name="email" required/>
+        <input type="password" value="secret"/>
+        <input type="number" value="42"/>
+        <input type="date" value="2022-05-16" />
+        <input type="datetime-local" value="2022-05-16T12:59" />
+        <input type="file"/>
+      
+        <div>
+          <input type="radio" name="FavDestination" id="CableCar"/>
+          <label for="CableCar">Cable Car</label>
+          <input type="radio" name="FavDestination" id="AnArtDay"/>
+          <label for="AnArtDay">An art day</label>
+          <input type="radio" name="FavDestination" id="PesteraSt.Michael"/>
+          <label for="PesteraSt.Michael">Pestera St. Michael</label>
+        </div>
+      
+        <div>
+          <input type="checkbox" id="terms"/>
+          <label for="terms">Sunt de acord cu termenii</label>
+        </div>
+        <input type="reset"/>
+        <input type="submit"/> 
+    </form>
+    <p>Click "Stop" pentru a opri atacul maimutelor din Gibraltar. (You have 5 seconds)</p>
+    <button onclick="myStopFunction()">Stop!</button>
+    <h2 id="monkey"></h2>
+    <div>
+        <button id="buton">Pauză</button>
+    </div>
+    <p id="mesaj"></p>
+
 </body>
 </html>
