@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="stylesheet.css">
     <script src="myScript.js" defer ></script>
 </head>
-<body>
+<body onclick="myFunction(event)">
 <header>Ghid   de   vizitare
 <img class="logo" src="https://www.visitgibraltar.gi/images/logo.png" width="200"/>
 <div class="dropdown">
@@ -116,6 +116,27 @@
         <button id="buton">Pauză</button>
     </div>
     <p id="mesaj"></p>
+    <div class="user-bar">
+        <span class="message"></span>
+        <button id="changeDetails"></button>
+      </div>
+      
+      <button id="removeDetails">Șterge detaliile</button>
+      <button id="refresh">Refresh</button>
+      <p id="get_computed_style">Hello</p>  
+      <div id="ceva"></div>
+      <div onscroll="myFunction()" style="height:200px; width:300px; overflow:auto;">
+        <div id="myDiv" style="width:250px; height:150px; padding:16px; border:1px solid black;">
+        Scroll to display the bounding client rect of the element with the border.
+        </div>
+        <div style="width:1000px; height:1000px;"></div>
+        </div>
+        <p id="demo1"></p>
+        <p>Click on any elements in this document to find out which element triggered the onclick event.</p>
 
+
+<button>This is a button</button>
+
+<p id="trigger"></p>
 </body>
 </html>

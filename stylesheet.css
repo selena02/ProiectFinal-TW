@@ -221,5 +221,25 @@ input {
   input:not([type="radio"]):not([type="checkbox"]) {
     display: block;
   }
+  .user-bar {
+    background: #FF4136;
+    display: flex;
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+  .user-bar .message {
+    flex: 1;
+    min-width: 0;
+  }
+  #get_computed_style {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    font: 2rem/2 sans-serif;
+    text-align: center;
+    background: #FF4136;
+    color: white;
+  }
+  
   
   
